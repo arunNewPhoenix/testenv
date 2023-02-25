@@ -23,11 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'v5zfee+-8hh)r&5463mgy_@j=jscnefpy2mzndzsc^7ovi7g5g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['benjamincarlson.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1']
 
-
+#benjamincarlson.pythonanywhere.com
 # Application definition
 
 INSTALLED_APPS = [
@@ -55,7 +55,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
-        'APP_DIRS': True,
+        'APP_DIRS': False,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
